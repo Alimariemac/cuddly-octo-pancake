@@ -1,0 +1,14 @@
+{
+  "name": "womens-website",
+  "version": "1.0.0",
+  "description": "a website to connect women with the support they need",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alicia maccara",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}

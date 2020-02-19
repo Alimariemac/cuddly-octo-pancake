@@ -1,0 +1,28 @@
+.header-relative {
+    position:relative;
+}
+.absolute{
+    position:absolute;
+    left:100px;
+    top:100px;
+    width:60%;
+}
+/* must size absolute for breakpoints*/
+
+.main-img{
+    background: url(../img/main-image.jpg) no-repeat center;
+    background-size: cover;
+    width:100%;
+    height:800px;
+}
+
+.section{
+    margin-top:70px;
+    margin-bottom:70px;
+}
+
+.full-container{
+    max-width:1650px;
+    margin:70px 100px 70px 100px;
+}
+/* must size full-container for breakpoints*/
