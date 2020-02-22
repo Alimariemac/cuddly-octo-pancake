@@ -3,9 +3,9 @@
 }
 .absolute{
     position:absolute;
-    left:100px;
-    top:100px;
-    width:60%;
+    left:0px;
+    top:0px;
+    height:38.5rem;
 }
 /* must size absolute for breakpoints*/
 
@@ -13,16 +13,69 @@
     background: url(../img/main-image.jpg) no-repeat center;
     background-size: cover;
     width:100%;
-    height:800px;
+    height:40rem;
 }
 
-.section{
-    margin-top:70px;
-    margin-bottom:70px;
+.side-img{
+    background: url(../img/side-img.jpg) no-repeat center;
+    background-size: cover;
+    width:50%;
+    height:500px;
 }
 
-.full-container{
+.top-container{
     max-width:1650px;
-    margin:70px 100px 70px 100px;
+    margin:3.5rem 10rem 5rem 10rem;
 }
 /* must size full-container for breakpoints*/
+/* 100 = 5 rem , 50 = 2.5*/
+.section{
+    max-width:1650px;
+    margin:5rem 10rem 0rem 10rem;
+}
+
+.section2{
+    max-width:1650px;
+    margin:2.5rem 10rem 0rem 10rem;
+}
+
+.icon-container{
+    text-align: center;
+    padding-bottom:2.5rem;
+    padding-right:1.25rem;
+    padding-left:1.25rem;
+}
+
+.half{
+    width:50%;
+    padding-left:5rem;
+}
+.padding-bottom{
+    padding-bottom:1rem;
+}
+.icon-col{
+    margin:auto;
+    max-width:10rem;
+}
+
+.icon{
+    padding-bottom:1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .absolute{
+        position:static;
+    }
+  
+    .side-img{
+        width:100%
+    }
+    .half{
+        width:100%;
+        padding-left:0px;
+    }
+    .padding-bottom{
+        padding-top:1.5rem;
+    }
+    
+}
