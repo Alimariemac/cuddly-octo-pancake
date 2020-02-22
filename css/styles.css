@@ -8,7 +8,9 @@
     height:38.5rem;
 }
 /* must size absolute for breakpoints*/
-
+.container-fluid{
+    overflow:hidden;
+}
 .main-img{
     background: url(../img/main-image.jpg) no-repeat center;
     background-size: cover;
@@ -31,13 +33,14 @@
 /* 100 = 5 rem , 50 = 2.5*/
 .section{
     max-width:1650px;
-    margin:5rem 10rem 0rem 10rem;
+    margin:8rem 10rem 0rem 10rem;
 }
 
 .section2{
     max-width:1650px;
-    margin:2.5rem 10rem 0rem 10rem;
+    margin:4rem 10rem 0rem 10rem;
 }
+
 
 .icon-container{
     text-align: center;
@@ -62,6 +65,14 @@
     padding-bottom:1rem;
 }
 
+.card-body{
+    min-width: 550px;
+    margin-right: 50px;
+}
+
+.card-img{
+     max-height:100px;
+}
 @media only screen and (max-width: 992px) {
     .absolute{
         position:static;
