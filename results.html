@@ -9,17 +9,16 @@
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
         <link rel="stylesheet" href="css/styles.css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
 
         <title>Women's Railroad</title>
     </head>
 
     <body>
-        <nav class = "navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item active">
@@ -31,52 +30,61 @@
                       <li class="nav-item">
                         <a class="nav-link" href="messages.html">Messages</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Disabled</a>
-                      </li>
                     </ul>
-                  </div>
-
-            
+                  </div>    
         </nav>
         <div class= "container-fluid">
             <div class = "section">
                 <div class="row">
                     <div class="col col-12 col-sm-12 col-lg-4">
-                        <div class ="full-height">
+                        <div class ="full-height mb-5">
                             <div class="sticky-top">
-                                <form>
-                                                <div class="form-group"> 
-                                                    <label for="location from">
+                                <div class="card p-4">
+                                        <form>
+                                            <div class="row"> 
+                                                <div class="col">
+                                                    <label for="location from" class="small-text">
                                                         From
                                                     </label>
-                                                    <input type="text" id="locationFrom" class="form-control" aria-describedby="Search">
-                                                    <label for="location from">
-                                                        To
-                                                    </label>
-                                                    <input type="text" id="locationTo" class="form-control">                     
-                                                    <label for="location from">
-                                                        Appointment Date
-                                                    </label>
-                                                    <input type="date" id="appointmentDate" class="form-control">
-                                                
-                                                    <label for="location from">
-                                                        Appointment Time
-                                                    </label>
-                                                    <input type="time" id="appointmentTime" class="form-control" >
-                                                    
-                                                    <label for="location from">
-                                                        People
-                                                    </label>   
-                                                    <input type="number" id="people" class="form-control">                                       
+                                                    <input type="text" id="locationFrom" class="form-control" aria-describedby="Search" placeholder="Where from?">
                                                 </div>
-                                            </form>
+                                                <div class="col">
+                                                    <label for="location from" class="small-text">
+                                                        To
+                                                </label>
+                                                <input type="text" id="locationTo" class="form-control" placeholder="Where to?">  
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="row">
+                                            <div class="col">               
+                                                <label for="location from" class="small-text">
+                                                    Appointment Date
+                                                </label>
+                                                <input type="date" id="appointmentDate" class="form-control">
+                                            </div>
+                                            <div class="col">
+                                                <label for="location from" class="small-text">
+                                                    Appointment Time
+                                                </label>
+                                                <input type="time" id="appointmentTime" class="form-control" >
+                                            </div> 
+                                        </div>
+                                        <div class = "row">
+                                            <div class="col-6">
+                                                <label for="location from" class="small-text">
+                                                    People
+                                                </label>   
+                                                <input type="number" id="people" class="form-control">                                       
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <div class= "col col-12 col-sm-12 col-lg-6 ml-auto mr-auto">
-                        <div class ="">
-                        <div class = "card card-body mb-5">
+                        <div class = "card card-body mb-5 drop-shadow">
                             <div class ="row">
                                 <div class="col col-5 col-sm-3">
                                     <img src="img/woman1.jpg" class="rounded-circle card-img" alt="image of person"/>
@@ -90,7 +98,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class = "card card-body mb-5">
+                        <div class = "card card-body mb-5 drop-shadow">
                             <div class ="row">
                                 <div class="col col-5 col-sm-3">
                                     <img src="img/woman1.jpg" class="rounded-circle card-img" alt="image of person"/>
@@ -104,7 +112,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class = "card card-body mb-5">
+                        <div class = "card card-body mb-5 drop-shadow">
                             <div class ="row">
                                 <div class="col col-5 col-sm-3">
                                     <img src="img/woman1.jpg" class="rounded-circle card-img" alt="image of person"/>
@@ -118,7 +126,7 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
+                        
                         
                     </div>
                 </div>

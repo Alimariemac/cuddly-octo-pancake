@@ -9,17 +9,16 @@
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
         <link rel="stylesheet" href="css/styles.css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
 
         <title>Women's Railroad</title>
     </head>
 
     <body>
-        <nav class = "navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item active">
@@ -31,13 +30,8 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Messages</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Disabled</a>
-                      </li>
                     </ul>
-                  </div>
-
-            
+                  </div>    
         </nav>
         <div class= "container-fluid">
             <div class = "section">
@@ -45,7 +39,7 @@
                     <div class="col col-12 col-lg-4" id="expand-message-01">
                         <div class ="full-height">
                             <div class="sticky-top">
-                                <div class = "card card-body mb-5">
+                                <div class = "card card-body mb-5 drop-shadow">
                                     <div class ="message-expand d-flex flex-md-row flex-column">
                                         <div class="mr-auto">
                                             <img src="img/woman1.jpg" class="rounded-circle card-img" alt="image of person"/>
@@ -56,13 +50,13 @@
                                             </p>
                                         </div>
                                     </div>
-                                </div>
-    
+                                </div>                      
                             </div>
                         </div>
                     </div>
                     <div class = "col col-12 col-lg-6 ml-auto mr-auto" id="message-container-01">
-                                <div class="d-flex flex-row mb-5">
+                        <div class="card card-body">
+                                <div class="d-flex flex-row">
                                     <div class="mr-auto">
                                         <h3>
                                             Alice Walker
@@ -93,9 +87,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class= "message-block-self">
+                                <div class= "message-block">
                                     <div class="d-flex flex-md-row flex-column">
-                                        <div class="mr-auto order-md-0 order-1 p-1">
+                                        <div class = "mr-auto p-1">         
+                                            <img src="img/woman2.jpg" class="rounded-circle message-img" alt="image of person"/>
+                                        </div>
+                                        <div class="ml-auto p-1">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet metus sit amet augue 
                                             ullamcorper sollicitudin tincidunt sit amet nibh. Praesent a turpis eget sapien fringilla accumsan 
                                             sed vel metus. Phasellus consectetur, leo in iaculis semper, sapien mi lacinia nulla, sed sagittis urna 
@@ -105,15 +102,14 @@
                                             justo et, pharetra vehicula eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec 
                                             dapibus arcu. Duis eget facilisis sapien. Suspendisse tincidunt at sapien non ullamcorper. 
                                         </div>
-                                        <div class = "ml-auto order-md-1 order-0 p-1">
-                                            <img src="img/woman2.jpg" class="rounded-circle message-img" alt="image of person"/>
-                                        </div>
                                     </div>
                                 </div>
+                                
                                
                             
                         
                     </div>
+                </div>
                 </div>
 
             </div>
