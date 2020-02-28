@@ -24,7 +24,7 @@ body {
 h1 {
   font-family: "Lora", serif;
   font-weight: 600;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #11100f; }
 
 h2 {
@@ -83,6 +83,9 @@ h2 {
   border-color: #f6f0e8;
   box-shadow: inset 0 1px 1px #f6f0e8, 0 0 4px #f6f0e8; }
 
+.front-card {
+  width: 70%; }
+
 .full-height {
   min-height: 100vh; }
 
@@ -107,9 +110,23 @@ h2 {
   padding-left: 1.25rem; }
 
 .icon-section {
-  max-width: 1650px;
+  max-width: 1450px;
   padding: 4rem 10rem 0rem 10rem;
   margin: auto; }
+
+.items {
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer; }
+
+.items .active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(2); }
 
 .link {
   margin-right: .5rem; }
@@ -124,7 +141,7 @@ h2 {
   z-index: 999; }
 
 .right-section {
-  max-width: 1650px; }
+  max-width: 1450px; }
 
 .message-block, .message-block-self {
   padding-top: 4rem; }
@@ -148,7 +165,8 @@ h2 {
   background-color: #11100f;
   color: #fdfcfa;
   width: 100%;
-  border-radius: 0rem; }
+  border-radius: 0rem;
+  margin-top: 1rem; }
   .primary-button:hover {
     color: #11100f;
     background-color: #cbac88; }
@@ -159,14 +177,15 @@ h2 {
   margin-bottom: 4rem; }
 
 .section {
-  max-width: 1650px;
+  max-width: 1450px;
   padding: 8rem 10rem 0rem 10rem;
   margin: auto; }
 
 .section-bottom {
-  max-width: 1650px;
+  max-width: 1450px;
   padding: 8rem 10rem 8rem 10rem;
-  margin: auto; }
+  margin: auto;
+  overflow-x: scroll; }
 
 .side-img {
   background: url(../img/side-img.jpg) no-repeat center;
@@ -175,14 +194,14 @@ h2 {
   height: 500px; }
 
 .slide {
-  min-width: 550px; }
+  min-width: 500px; }
 
 .small-text {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #84817e; }
 
 .top-container {
-  max-width: 1650px;
+  max-width: 1450px;
   padding: 3.5rem 10rem 5rem 10rem; }
 
 .top-side {
@@ -195,6 +214,8 @@ h2 {
     padding: 5rem 5rem 5rem 5em; }
   .full-height {
     min-height: 1vh; }
+  .front-card {
+    width: 100%; }
   .half {
     width: 100%;
     padding-left: 0px;
@@ -212,7 +233,7 @@ h2 {
   .sticky-top {
     position: static; }
   html {
-    font-size: 90%; } }
+    font-size: 95%; } }
 
 @media (max-width: 576px) {
   #expand-message-01 {
@@ -222,4 +243,4 @@ h2 {
   .section-bottom, .top-container, .footer, .icon-section {
     padding: 2rem; }
   html {
-    font-size: 80%; } }
+    font-size: 85%; } }
