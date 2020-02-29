@@ -1,14 +1,25 @@
 $(function(){
       
-    $("#expand-message-01").click(function(){        
+
+  window.addEventListener('resize',collapseMessages)
+
+  function collapseMessages(){
+    if($(window).width()>576){
+      $("#message-container-01").css('display','block');
+    }
+  }
+
+  $("#expand-message-01").click(function(){        
         if($("#message-container-01").css("display")=='none' && $(window).width() < 576){
             $("#message-container-01").css('display','block');
         }
         else if($("#message-container-01").css("display")=='block' && $(window).width() < 576){
-            $("#message-container-01").css('display','none');
+          $("#message-container-01").css('display','none');
+        }
+        else{
+          return;
         }
     });
-
 
 const slider = document.querySelector('.items');
 let isDown = false;
