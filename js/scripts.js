@@ -7,6 +7,9 @@ $(function(){
     if($(window).width()>576){
       $("#message-container-01").css('display','block');
     }
+    else if($(window).width()<576){
+      $("#message-container-01").css('display','none');
+    }
   }
 
   $("#expand-message-01").click(function(){        
